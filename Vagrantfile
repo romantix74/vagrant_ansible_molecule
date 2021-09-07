@@ -20,6 +20,7 @@ Vagrant.configure("2") do |config|
 	apt install -y ansible
 	pip install molecule[docker]
 	apt install -y docker.io
+	apt install -y tmux
 	usermod -a -G docker vagrant
     #if [ `ip route get 10.0.0.0/8 | wc -l` -eq 0 ]; then ip route add 10.0.0.0/8 via 10.161.0.1; fi
   SHELL
